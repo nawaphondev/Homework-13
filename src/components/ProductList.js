@@ -37,13 +37,14 @@ export default function ProductList(props) {
     <div className="product-list">
       <ul>{renderItems}</ul>
       <div className="pagination">
-        <button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>
+        <button className='btn-prev' onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>
           Prev
         </button>
         <div className="page-indicator">
           Page {currentPage} of {Math.ceil(data.products?.length / itemsPerPage)}
         </div>
         <button
+          className='btn-next'
           onClick={() => paginate(currentPage + 1)}
           disabled={currentPage === Math.ceil(data.products?.length / itemsPerPage)}
         >

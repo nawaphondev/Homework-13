@@ -83,9 +83,8 @@ h1 {
 }
 
 .pagination button {
-  padding: 8px 16px;
+  padding: 8px 32px;
   cursor: pointer;
-  background-color: #4caf50;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -102,3 +101,10 @@ h1 {
   color: #333;
 }
 
+.btn-prev {
+  background-color: #63af4c;
+}
+
+.btn-next {
+  background-color: #4c87af;
+}
